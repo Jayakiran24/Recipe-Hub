@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 const NAV_LINKS = ["Home", "Browse", "Chefs", "Pricing"];
 
-const NAvbar = () => {
+const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
@@ -115,4 +115,4 @@ const NAvbar = () => {
   );
 };
 
-export default NAvbar;
+export default Navbar;
