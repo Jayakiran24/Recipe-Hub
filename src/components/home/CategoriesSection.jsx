@@ -2,8 +2,8 @@
 import { useNavigate } from "react-router-dom";
 const CARDS = [
   {
-    id: "booking",
-    path: "/booking",
+    id: "Order",
+    path: "/order-food",
     title: "Order Food",
     description:
       "Curated menus from the city's finest restaurants, delivered in premium sustainable packaging.",
@@ -11,7 +11,7 @@ const CARDS = [
   },
   {
     id: "chefs",
-    path: "/chefs",
+    path: "/book-chef",
     title: "Book a Chef",
     description:
       "Invite a culinary master to your home for a personalized, five-star cooking experience.",

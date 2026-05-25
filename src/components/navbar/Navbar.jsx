@@ -1,5 +1,12 @@
 import React, { useState } from "react";
-const NAV_LINKS = ["Home", "Browse", "Chefs", "Pricing"];
+import { Link } from "react-router-dom";
+// const NAV_LINKS = ["Home", "Browse", "Chefs", "Pricing"];
+const NAV_LINKS = [
+  { name: "Home", path: "/" },
+  { name: "Order Food", path: "/order-food" },
+  { name: "Book a Chef", path: "/book-chef" },
+  { name: "Contact", path: "/contact" },
+];
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -55,18 +62,18 @@ const Navbar = () => {
 
         {/* Desktop nav links — centered */}
         <div className="hidden md:flex items-center gap-8 absolute left-1/2 -translate-x-1/2">
-          {NAV_LINKS.map((l) => (
-            <a
-              key={l}
-              href="#"
+          {NAV_LINKS.map((link) => (
+            <Link
+              key={link.name}
+              to={link.path}
+              className="text-gray-300 hover:text-white transition-colors duration-200 tracking-wide"
               style={{
                 fontFamily: "'Trebuchet MS', sans-serif",
                 fontSize: "0.875rem",
               }}
-              className="text-gray-300 hover:text-white transition-colors duration-200 tracking-wide"
             >
-              {l}
-            </a>
+              {link.name}
+            </Link>
           ))}
         </div>
 
@@ -100,14 +107,15 @@ const Navbar = () => {
           className="md:hidden absolute top-16 left-0 right-0 z-40 py-4 px-6 flex flex-col gap-4"
           style={{ background: "#1a1410" }}
         >
-          {NAV_LINKS.map((l) => (
-            <a
-              key={l}
-              href="#"
+          {NAV_LINKS.map((link) => (
+            <Link
+              key={link.name}
+              to={link.path}
+              onClick={() => setMenuOpen(false)}
               className="text-gray-300 hover:text-white text-sm tracking-wide"
             >
-              {l}
-            </a>
+              {link.name}
+            </Link>
           ))}
         </div>
       )}
