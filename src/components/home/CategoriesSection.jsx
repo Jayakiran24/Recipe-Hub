@@ -26,6 +26,7 @@ export default function CategoriesSection() {
     <section
       className="px-4 py-10 flex flex-col gap-30 max-w-lg mx-auto md:max-w-full md:flex-row justify-center"
       style={{ background: "#0f0d0b" }}
+      id="categories"
     >
       {CARDS.map((card) => (
         <div

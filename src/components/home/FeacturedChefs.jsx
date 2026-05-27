@@ -85,7 +85,7 @@ export default function FeaturedChefs() {
 
   return (
     <section className="bg-[#0f0d0b] py-12 px-4">
-      <div className="max-w-7xl mx-auto px-6">
+      <div className="max-w-7xl mx-auto px-6" id="chefs">
         <Swiper
           modules={[Navigation, Autoplay]}
           navigation
@@ -164,7 +164,7 @@ export default function FeaturedChefs() {
                 </div>
 
                 {/* Button */}
-                <button
+                {/* <button
                   onClick={(e) => {
                     e.stopPropagation();
                     navigate("/booking");
@@ -181,7 +181,7 @@ export default function FeaturedChefs() {
               "
                 >
                   Book Session
-                </button>
+                </button> */}
               </div>
             </SwiperSlide>
           ))}
