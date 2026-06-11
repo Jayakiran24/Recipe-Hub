@@ -11,7 +11,7 @@ const CARDS = [
   },
   {
     id: "chefs",
-    path: "/book-chef",
+    path: "/chefs",
     title: "Book a Chef",
     description:
       "Invite a culinary master to your home for a personalized, five-star cooking experience.",

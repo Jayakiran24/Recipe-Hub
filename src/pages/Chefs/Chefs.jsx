@@ -1897,7 +1897,7 @@ export default function Chefs() {
                 </div>
                 <button
                   className="book-btn"
-                  onClick={() => navigate("/booking")}
+                  onClick={() => navigate("/chefs")}
                 >
                   Book Now
                 </button>

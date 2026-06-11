@@ -14,6 +14,8 @@ import Login from "../pages/Login/Login";
 import Cart from "../components/cards/RecipeCard";
 import Checkout from "../pages/Checkout/Checkout";
 import RecipeDetail from "../pages/RecipeDetails/RecipeDetails";
+import ChefDetails from "../pages/ChefDetails/ChefDetails";
+import BookingPage from "../pages/Booking/BookingPage";
 
 export default function AppRoutes() {
   return (
@@ -23,11 +25,13 @@ export default function AppRoutes() {
       <Route element={<MainLayout />}>
         <Route path="/" element={<Home />} />
         <Route path="/order-food" element={<Order />} />
-        <Route path="/book-chef" element={<Chefs />} />
+        <Route path="/chefs" element={<Chefs />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/cart" element={<Cart />} />
         <Route path="/checkout" element={<Checkout />} />
         <Route path="/order/:id" element={<RecipeDetail />} />
+        <Route path="/chefs/:id" element={<ChefDetails />} />
+        <Route path="/chefs/:id/book" element={<BookingPage />} />
       </Route>
       <Route path="/register" element={<Register />} />
       <Route path="/login" element={<Login />} />

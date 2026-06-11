@@ -17,8 +17,8 @@ const FOOTER_COLUMNS = [
   {
     heading: "Services",
     links: [
-      { label: "Book a Chef", path: "/book-chef" },
-      { label: "Meal Planner", path: "/planner" },
+      { label: "Book a Chef", path: "/chefs" },
+      // { label: "Meal Planner", path: "/planner" },
       { label: "About Us", path: "/about" },
       { label: "Contact", path: "/contact" },
     ],
@@ -28,8 +28,8 @@ const FOOTER_COLUMNS = [
     links: [
       { label: "Login", path: "/login" },
       { label: "Register", path: "/register" },
-      { label: "Dashboard", path: "/dashboard" },
-      { label: "Favorites", path: "/favorites" },
+      // { label: "Dashboard", path: "/dashboard" },
+      // { label: "Favorites", path: "/favorites" },
     ],
   },
   // {
