@@ -155,7 +155,6 @@ export default function Checkout() {
     (acc, item) => acc + item.quantity * item.price,
     0,
   );
-
   const deliveryFee = 49;
   const gst = Math.round(subtotal * 0.05);
   const total = subtotal + deliveryFee + gst;
