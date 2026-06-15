@@ -7,6 +7,9 @@ function MainLayout() {
     <>
       <Navbar />
 
+      {/* Spacer — pushes all page content below the fixed 64px navbar */}
+      <div style={{ height: "64px" }} />
+
       <main>
         <Outlet />
       </main>
